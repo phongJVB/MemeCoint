@@ -1,63 +1,91 @@
 import React from 'react';
 import './css/Footer.css';
-import { Button } from './Button';
+import './css/backedBy.css';
+import './css/worldClassExperience.css';
 import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
     <div className='footer-container'>
-      <section className='footer-subscription'>
-        <p className='footer-subscription-heading'>
-          Join the Adventure newsletter to receive our best vacation deals
-        </p>
-        <p className='footer-subscription-text'>
-          You can unsubscribe at any time.
-        </p>
-        <div className='input-areas'>
-          <form>
-            <input
-              className='footer-input'
-              name='email'
-              type='email'
-              placeholder='Your Email'
-            />
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
-          </form>
+
+      <section class="worldClassExperience" style={{
+      backgroundImage: "url('./images/Background/back.png')",
+    }}>
+        <div class="container">
+          <h2><span>World Class</span> Experience</h2>
+          <p>
+            Wall St and Nasdaq
+            <span>tech pioneers and leading crypto &amp; blockchain</span> experts
+            who have joined forces to redefine the decentralized trading space.
+          </p>
         </div>
       </section>
-      <div class='footer-links'>
-        <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
-            <h2>About Us</h2>
-            <Link to='/sign-up'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
-            <Link to='/'>Terms of Service</Link>
+      <section class="world" style={{
+      backgroundImage: "url('./images/Background/earth.png')",
+    }}>
+        <div class="container">
+          <div class="top">
+            <h2>FINANCIAL SYSTEMS EXPERTISE</h2>
+            <ul>
+              <li>Co-founded multiple companies, 2 x Nasdaq IPOs (SCNT; VIAN)</li>
+              <li>Ex MD of Cisco, VP of Blockchain at IBM</li>
+              <li>
+                Architected and designed Nasdaq trading systems connecting it to
+                global liquidity
+              </li>
+              <li>
+                Co-founder, Diligent: Co-created with Merrill Lynch &amp; Credit
+                Suisse
+              </li>
+              <li>
+                Regular speaker at Davos World Economic Forum “Future of Finance”.
+              </li>
+            </ul>
           </div>
-          <div class='footer-link-items'>
-            <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
-            <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
-            <Link to='/'>Sponsorships</Link>
+
+          <div class="line"></div>
+          <div class="bottom">
+            <h2>DEFI AND CRYPTO EXPERTISE</h2>
+            <ul>
+              <li>
+                Developed smart contracts &amp; crypto economics for
+                multiple blockchain and DeFi projects
+              </li>
+              <li>
+                Securely and successfully ran token launches on Bitcoin, Bitshares,
+                and Ethereum
+              </li>
+              <li>Holding technical Patents granted in US and Europe.</li>
+              <li>Winners of the DBS Singapore Hackathon</li>
+              <li>
+                World Economic Forum Keynote Speaker, introduced the world’s first
+                Techno-Legal Framework for DAOs
+              </li>
+            </ul>
           </div>
         </div>
-        <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
-            <h2>Videos</h2>
-            <Link to='/'>Submit Video</Link>
-            <Link to='/'>Ambassadors</Link>
-            <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link>
-          </div>
-          <div class='footer-link-items'>
-            <h2>Social Media</h2>
-            <Link to='/'>Telegram</Link>
-            <Link to='/'>Discord</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
-          </div>
+
+
+      </section>
+      <div class="backedBy" style={{
+      backgroundImage: "url('./images/Background/high.png')",
+      backgroundRepeat: 'repeat',
+    }}>
+        <h2 class="backedBy__heading">BACKED BY</h2>
+        <div class="container">
+          <img src="images/backedBy/FacultyCapital.png" alt="" />
+          <img src="images/backedBy/LD.png" alt="" />
+          <img src="images/backedBy/AU21.png" alt="" />
+          <img src="images/backedBy/DigitalStrategies.png" alt="" />
+          <img src="images/backedBy/GBV.png" alt="" />
+          <img src="images/backedBy/JRR.png" alt="" />
+          <img src="images/backedBy/Rarestone.png" alt="" />
+          <img src="images/backedBy/Moonwhale.png" alt="" />
+          <img src="images/backedBy/Fission.png" alt="" />
+          <img src="images/backedBy/Vendetta.png" alt="" />
+          <img src="images/backedBy/Kyros.png" alt="" />
+          <img src="images/backedBy/CognitionVP.png" alt="" />
+          <img src="images/backedBy/TDefi.png" alt="" />
         </div>
       </div>
       <section class='social-media'>
