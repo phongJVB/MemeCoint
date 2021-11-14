@@ -3,6 +3,7 @@ import './css/Footer.css';
 import './css/backedBy.css';
 import './css/worldClassExperience.css';
 import { Link } from 'react-router-dom';
+import BackedByItem from './BackedByItem.js';
 
 function Footer() {
   return (
@@ -73,19 +74,19 @@ function Footer() {
     }}>
         <h2 class="backedBy__heading">BACKED BY</h2>
         <div class="container">
-          <img src="images/backedBy/FacultyCapital.png" alt="" />
-          <img src="images/backedBy/LD.png" alt="" />
-          <img src="images/backedBy/AU21.png" alt="" />
-          <img src="images/backedBy/DigitalStrategies.png" alt="" />
-          <img src="images/backedBy/GBV.png" alt="" />
-          <img src="images/backedBy/JRR.png" alt="" />
-          <img src="images/backedBy/Rarestone.png" alt="" />
-          <img src="images/backedBy/Moonwhale.png" alt="" />
-          <img src="images/backedBy/Fission.png" alt="" />
-          <img src="images/backedBy/Vendetta.png" alt="" />
-          <img src="images/backedBy/Kyros.png" alt="" />
-          <img src="images/backedBy/CognitionVP.png" alt="" />
-          <img src="images/backedBy/TDefi.png" alt="" />
+          <BackedByItem src='images/backedBy/FacultyCapital.png'/>
+          <BackedByItem src='images/backedBy/LD.png'/>
+          <BackedByItem src='images/backedBy/AU21.png'/>
+          <BackedByItem src='images/backedBy/DigitalStrategies.png'/>
+          <BackedByItem src='images/backedBy/GBV.png'/>
+          <BackedByItem src='images/backedBy/JRR.png'/>
+          <BackedByItem src='images/backedBy/Rarestone.png'/>
+          <BackedByItem src='images/backedBy/Moonwhale.png'/>
+          <BackedByItem src='images/backedBy/Fission.png'/>
+          <BackedByItem src='images/backedBy/Vendetta.png'/>
+          <BackedByItem src='images/backedBy/Kyros.png'/>
+          <BackedByItem src='images/backedBy/CognitionVP.png'/>
+          <BackedByItem src='images/backedBy/TDefi.png'/>
         </div>
       </div>
       <section class='social-media'>
